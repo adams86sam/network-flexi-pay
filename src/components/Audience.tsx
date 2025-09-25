@@ -8,10 +8,11 @@ const Audience = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Choose your path
+            Choose your growth path
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Whether you're a merchant or partner, we have tailored solutions for your success
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Whether you're a merchant looking to optimize payments or a partner ready to scale your business, 
+            we have specialized solutions designed for your unique needs and growth objectives
           </p>
         </div>
 
@@ -24,9 +25,17 @@ const Audience = () => {
               </div>
               <div>
                 <h3 className="text-2xl font-bold mb-3">I am a merchant</h3>
-                <p className="text-muted-foreground mb-6">
-                  Access payment tools for your business. Get started with our comprehensive merchant solutions.
+                <p className="text-muted-foreground mb-4">
+                  Access powerful payment tools, competitive rates, and dedicated support for your business. 
+                  Get started with our comprehensive merchant solutions in under 24 hours.
                 </p>
+                <ul className="text-sm text-muted-foreground space-y-1 mb-6 text-left">
+                  <li>• Competitive rates starting at 2.6%</li>
+                  <li>• Accept all payment methods</li>
+                  <li>• Advanced fraud protection</li>
+                  <li>• Real-time reporting & analytics</li>
+                  <li>• 24/7 customer support</li>
+                </ul>
               </div>
               <Button variant="hero" className="w-full font-semibold">
                 Merchant Sign up
@@ -42,9 +51,17 @@ const Audience = () => {
               </div>
               <div>
                 <h3 className="text-2xl font-bold mb-3">I am a partner</h3>
-                <p className="text-muted-foreground mb-6">
-                  Collaborate with us to grow together. Join our partner network and unlock new opportunities.
+                <p className="text-muted-foreground mb-4">
+                  Join our partner network and unlock new revenue streams with our white-label platform. 
+                  Scale your business with enterprise-grade payment solutions.
                 </p>
+                <ul className="text-sm text-muted-foreground space-y-1 mb-6 text-left">
+                  <li>• Revenue sharing opportunities</li>
+                  <li>• White-label solutions</li>
+                  <li>• Dedicated partner support</li>
+                  <li>• Marketing & sales resources</li>
+                  <li>• Custom integration options</li>
+                </ul>
               </div>
               <Button variant="outline" className="w-full font-semibold border-2">
                 Request a demo

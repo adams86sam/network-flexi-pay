@@ -22,9 +22,24 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            We're a full service payment provider, enabling ISOs and ISVs to monetize payments under their
-            brand with our in-house platform for a fast, risk-free market entry.
+            We're a comprehensive payment provider, enabling ISOs, ISVs, and businesses of all sizes to monetize payments under their
+            brand with our enterprise-grade platform for fast, secure, and profitable market entry.
           </p>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto">
+            <div className="text-center">
+              <div className="text-3xl font-bold text-primary mb-2">2.6%</div>
+              <div className="text-sm text-muted-foreground">Starting Rate</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-secondary mb-2">24hr</div>
+              <div className="text-sm text-muted-foreground">Quick Setup</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-accent mb-2">24/7</div>
+              <div className="text-sm text-muted-foreground">Support</div>
+            </div>
+          </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 

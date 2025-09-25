@@ -15,48 +15,48 @@ const Features = () => {
   const features = [
     {
       icon: <CreditCard className="w-8 h-8" />,
-      title: "Full white label",
-      description: "Complete payment processing under your brand"
+      title: "Full White Label Solution",
+      description: "Complete payment processing infrastructure under your brand with customizable interfaces, branded documentation, and dedicated support teams"
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: "Distribution channels",
-      description: "Multiple channels for payment distribution"
+      title: "Multi-Channel Distribution",
+      description: "Reach customers through online, in-store, mobile, and recurring payment channels with unified reporting and management"
     },
     {
       icon: <Settings className="w-8 h-8" />,
-      title: "Streamlined onboarding",
-      description: "Quick and efficient merchant setup process"
+      title: "Streamlined Onboarding",
+      description: "Automated merchant setup process with digital document collection, instant risk assessment, and same-day activation for qualified businesses"
     },
     {
       icon: <Shield className="w-8 h-8" />,
-      title: "Merchants",
-      description: "Comprehensive merchant management tools"
+      title: "Advanced Security & Compliance",
+      description: "PCI DSS Level 1 compliance, end-to-end encryption, tokenization, and real-time fraud monitoring to protect every transaction"
     },
     {
       icon: <Zap className="w-8 h-8" />,
-      title: "Portfolio management",
-      description: "Advanced portfolio tracking and analytics"
+      title: "Portfolio Management Suite",
+      description: "Comprehensive analytics, performance tracking, revenue optimization tools, and customizable dashboards for data-driven decisions"
     },
     {
       icon: <RefreshCw className="w-8 h-8" />,
-      title: "Chargeback management",
-      description: "Automated chargeback handling and prevention"
+      title: "Intelligent Chargeback Management", 
+      description: "Automated dispute handling, representment services, alert systems, and proactive prevention to minimize losses"
     },
     {
       icon: <DollarSign className="w-8 h-8" />,
-      title: "Gateway & terminals",
-      description: "Integrated payment gateway and terminal solutions"
+      title: "Integrated Gateway & Terminals",
+      description: "Seamless payment processing with our proprietary gateway, certified hardware, and extensive third-party integrations"
     },
     {
       icon: <TrendingUp className="w-8 h-8" />,
-      title: "Card & ACH processing",
-      description: "Support for all major card networks and ACH"
+      title: "Omnichannel Processing",
+      description: "Accept all major cards, ACH, digital wallets, and alternative payment methods with competitive rates and instant settlements"
     },
     {
       icon: <AlertTriangle className="w-8 h-8" />,
-      title: "Fraud prevention",
-      description: "Advanced fraud detection and prevention systems"
+      title: "AI-Powered Fraud Prevention",
+      description: "Machine learning algorithms, velocity checking, geolocation analysis, and behavioral pattern recognition to stop fraud before it happens"
     }
   ];
 
@@ -65,10 +65,11 @@ const Features = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Technology-driven payment solutions
+            Enterprise-grade payment solutions
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Comprehensive suite of payment tools and services designed to empower your business growth
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Comprehensive suite of payment tools, advanced security features, and dedicated support 
+            designed to accelerate your business growth and maximize revenue opportunities
           </p>
         </div>
 
