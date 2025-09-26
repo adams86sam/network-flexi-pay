@@ -1,17 +1,9 @@
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import ContactForm from "@/components/ContactForm";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { 
   Phone, 
   Mail, 
@@ -175,65 +167,7 @@ const Contact = () => {
             <div className="max-w-6xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-12">
                 {/* Contact Form */}
-                <Card className="glass-card p-8">
-                  <h3 className="text-2xl font-bold mb-6">Send us a message</h3>
-                  <form className="space-y-6">
-                    <div className="grid md:grid-cols-2 gap-4">
-                      <div>
-                        <Label htmlFor="firstName">First Name *</Label>
-                        <Input id="firstName" placeholder="John" className="mt-1" />
-                      </div>
-                      <div>
-                        <Label htmlFor="lastName">Last Name *</Label>
-                        <Input id="lastName" placeholder="Doe" className="mt-1" />
-                      </div>
-                    </div>
-                    
-                    <div>
-                      <Label htmlFor="email">Business Email *</Label>
-                      <Input id="email" type="email" placeholder="john@company.com" className="mt-1" />
-                    </div>
-                    
-                    <div>
-                      <Label htmlFor="company">Company Name</Label>
-                      <Input id="company" placeholder="Your Company" className="mt-1" />
-                    </div>
-                    
-                    <div>
-                      <Label htmlFor="phone">Phone Number</Label>
-                      <Input id="phone" type="tel" placeholder="+1 (555) 123-4567" className="mt-1" />
-                    </div>
-                    
-                    <div>
-                      <Label htmlFor="inquiry">Inquiry Type</Label>
-                      <Select>
-                        <SelectTrigger className="mt-1">
-                          <SelectValue placeholder="Select inquiry type" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="sales">Sales Inquiry</SelectItem>
-                          <SelectItem value="support">Technical Support</SelectItem>
-                          <SelectItem value="partnership">Partnership</SelectItem>
-                          <SelectItem value="billing">Billing Question</SelectItem>
-                          <SelectItem value="other">Other</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                    
-                    <div>
-                      <Label htmlFor="message">Message *</Label>
-                      <Textarea 
-                        id="message" 
-                        placeholder="Tell us about your business and payment processing needs..."
-                        className="mt-1 min-h-[120px]"
-                      />
-                    </div>
-                    
-                    <Button type="submit" variant="hero" className="w-full font-semibold">
-                      Send Message
-                    </Button>
-                  </form>
-                </Card>
+                <ContactForm />
 
                 {/* Office Locations */}
                 <div className="space-y-8">
@@ -341,6 +275,7 @@ const Contact = () => {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 };

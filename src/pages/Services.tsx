@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -344,6 +345,7 @@ const Services = () => {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 };
