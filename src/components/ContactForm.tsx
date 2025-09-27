@@ -13,6 +13,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Loader2, Send } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 
 interface FormData {
   firstName: string;
@@ -71,11 +72,21 @@ const ContactForm = () => {
     setIsSubmitting(true);
 
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      
-      // Here you would typically send the data to your backend
-      console.log("Form submitted:", formData);
+      // Save to Supabase database
+      const { error } = await supabase
+        .from('contact_submissions')
+        .insert({
+          first_name: formData.firstName,
+          last_name: formData.lastName,
+          email: formData.email,
+          company: formData.company || null,
+          phone: formData.phone || null,
+          inquiry_type: formData.inquiryType || null,
+          message: formData.message,
+          status: 'unread'
+        });
+
+      if (error) throw error;
       
       toast({
         title: "Message Sent Successfully!",
@@ -92,7 +103,8 @@ const ContactForm = () => {
         inquiryType: "",
         message: "",
       });
-    } catch (error) {
+    } catch (error: any) {
+      console.error('Form submission error:', error);
       toast({
         title: "Submission Failed",
         description: "There was an error sending your message. Please try again.",
