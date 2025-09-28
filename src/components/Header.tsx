@@ -13,6 +13,7 @@ const Header = () => {
   const navItems = [
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
+    { name: "Forms", href: "/forms" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -79,7 +80,7 @@ const Header = () => {
                   </Link>
                 </Button>
                 <Button variant="hero" asChild>
-                  <Link to="/contact">
+                  <Link to="/forms">
                     Get Started
                   </Link>
                 </Button>
@@ -145,7 +146,7 @@ const Header = () => {
                   </Link>
                 </Button>
                 <Button variant="hero" className="w-full" asChild>
-                  <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+                  <Link to="/forms" onClick={() => setIsMenuOpen(false)}>
                     Get Started
                   </Link>
                 </Button>

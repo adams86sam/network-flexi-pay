@@ -62,6 +62,102 @@ export type Database = {
         }
         Relationships: []
       }
+      demo_requests: {
+        Row: {
+          company: string | null
+          company_size: string | null
+          created_at: string
+          current_payment_provider: string | null
+          email: string
+          first_name: string
+          id: string
+          industry: string | null
+          job_title: string | null
+          last_name: string
+          message: string | null
+          monthly_volume: string | null
+          phone: string | null
+          preferred_demo_date: string | null
+          preferred_demo_time: string | null
+          responded_by: string | null
+          status: string | null
+          updated_at: string
+        }
+        Insert: {
+          company?: string | null
+          company_size?: string | null
+          created_at?: string
+          current_payment_provider?: string | null
+          email: string
+          first_name: string
+          id?: string
+          industry?: string | null
+          job_title?: string | null
+          last_name: string
+          message?: string | null
+          monthly_volume?: string | null
+          phone?: string | null
+          preferred_demo_date?: string | null
+          preferred_demo_time?: string | null
+          responded_by?: string | null
+          status?: string | null
+          updated_at?: string
+        }
+        Update: {
+          company?: string | null
+          company_size?: string | null
+          created_at?: string
+          current_payment_provider?: string | null
+          email?: string
+          first_name?: string
+          id?: string
+          industry?: string | null
+          job_title?: string | null
+          last_name?: string
+          message?: string | null
+          monthly_volume?: string | null
+          phone?: string | null
+          preferred_demo_date?: string | null
+          preferred_demo_time?: string | null
+          responded_by?: string | null
+          status?: string | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      newsletter_subscriptions: {
+        Row: {
+          email: string
+          first_name: string | null
+          id: string
+          last_name: string | null
+          status: string | null
+          subscribed_at: string
+          subscription_type: string | null
+          unsubscribed_at: string | null
+        }
+        Insert: {
+          email: string
+          first_name?: string | null
+          id?: string
+          last_name?: string | null
+          status?: string | null
+          subscribed_at?: string
+          subscription_type?: string | null
+          unsubscribed_at?: string | null
+        }
+        Update: {
+          email?: string
+          first_name?: string | null
+          id?: string
+          last_name?: string | null
+          status?: string | null
+          subscribed_at?: string
+          subscription_type?: string | null
+          unsubscribed_at?: string | null
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           created_at: string
@@ -89,6 +185,132 @@ export type Database = {
           role?: string | null
           updated_at?: string
           user_id?: string
+        }
+        Relationships: []
+      }
+      quote_requests: {
+        Row: {
+          average_transaction_amount: string | null
+          business_type: string | null
+          company: string
+          created_at: string
+          current_provider: string | null
+          email: string
+          first_name: string
+          id: string
+          integration_type: string | null
+          last_name: string
+          monthly_transaction_volume: string | null
+          phone: string | null
+          quote_amount: number | null
+          quote_valid_until: string | null
+          responded_by: string | null
+          specific_requirements: string | null
+          status: string | null
+          timeline: string | null
+          updated_at: string
+        }
+        Insert: {
+          average_transaction_amount?: string | null
+          business_type?: string | null
+          company: string
+          created_at?: string
+          current_provider?: string | null
+          email: string
+          first_name: string
+          id?: string
+          integration_type?: string | null
+          last_name: string
+          monthly_transaction_volume?: string | null
+          phone?: string | null
+          quote_amount?: number | null
+          quote_valid_until?: string | null
+          responded_by?: string | null
+          specific_requirements?: string | null
+          status?: string | null
+          timeline?: string | null
+          updated_at?: string
+        }
+        Update: {
+          average_transaction_amount?: string | null
+          business_type?: string | null
+          company?: string
+          created_at?: string
+          current_provider?: string | null
+          email?: string
+          first_name?: string
+          id?: string
+          integration_type?: string | null
+          last_name?: string
+          monthly_transaction_volume?: string | null
+          phone?: string | null
+          quote_amount?: number | null
+          quote_valid_until?: string | null
+          responded_by?: string | null
+          specific_requirements?: string | null
+          status?: string | null
+          timeline?: string | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      trial_requests: {
+        Row: {
+          business_type: string | null
+          company: string
+          created_at: string
+          email: string
+          expected_monthly_volume: string | null
+          first_name: string
+          id: string
+          integration_timeline: string | null
+          job_title: string | null
+          last_name: string
+          message: string | null
+          phone: string | null
+          responded_by: string | null
+          status: string | null
+          trial_end_date: string | null
+          trial_start_date: string | null
+          updated_at: string
+        }
+        Insert: {
+          business_type?: string | null
+          company: string
+          created_at?: string
+          email: string
+          expected_monthly_volume?: string | null
+          first_name: string
+          id?: string
+          integration_timeline?: string | null
+          job_title?: string | null
+          last_name: string
+          message?: string | null
+          phone?: string | null
+          responded_by?: string | null
+          status?: string | null
+          trial_end_date?: string | null
+          trial_start_date?: string | null
+          updated_at?: string
+        }
+        Update: {
+          business_type?: string | null
+          company?: string
+          created_at?: string
+          email?: string
+          expected_monthly_volume?: string | null
+          first_name?: string
+          id?: string
+          integration_timeline?: string | null
+          job_title?: string | null
+          last_name?: string
+          message?: string | null
+          phone?: string | null
+          responded_by?: string | null
+          status?: string | null
+          trial_end_date?: string | null
+          trial_start_date?: string | null
+          updated_at?: string
         }
         Relationships: []
       }

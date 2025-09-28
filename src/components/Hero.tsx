@@ -46,13 +46,15 @@ const Hero = () => {
               variant="hero" 
               size="lg" 
               className="text-lg px-8 py-4 h-14 font-semibold"
+              onClick={() => window.location.href = '/forms?tab=get-started'}
             >
-              Sign up →
+              Get Started →
             </Button>
             <Button 
               variant="outline" 
               size="lg" 
               className="text-lg px-8 py-4 h-14 font-semibold border-2"
+              onClick={() => window.location.href = '/forms?tab=demo'}
             >
               Request a demo
             </Button>
